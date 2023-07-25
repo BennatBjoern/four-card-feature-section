@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--very-light-gray);
+}
+
+.container {
+  margin-top: 4rem;
+  max-width: 80%;
+}
+
+.heading {
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: 200;
+}
+
+.heading span {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.text {
+  font-size: 1.4rem;
+  text-align: center;
+  color: var(--grayish-blue);
+  max-width: 50rem;
+  margin: 0 auto 4rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.card {
+  max-width: 32rem;
+  padding: 3rem;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card--team {
+  border-top: 4px solid var(--red);
+  grid-column: 2 / 3;
+  grid-row: span 2;
+  border-top: px solid --red;
+}
+
+.card--supervisor {
+  border-top: 4px solid var(--cyan);
+  grid-column: 1 / 2;
+  grid-row: span 2;
+}
+
+.card--karma {
+  border-top: 4px solid var(--orange);
+  grid-row: span 2;
+}
+
+.card--calculator {
+  border-top: 4px solid var(--blue);
+  grid-column: 3 / -1;
+  grid-row: span 2;
+}
+
+.heading-secondary {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  font-size: 1.2rem;
+  color: var(--grayish-blue);
+  margin-bottom: 8rem;
+}
+
+.card-img {
+  position: absolute;
+  bottom: 2rem;
+  right: 3rem;
+}
+
+@media (max-width: 24em) {
+  .heading {
+    font-size: 2.4rem;
+  }
+  .cards {
+    display: block;
+  }
+  .card--team,
+  .card--supervisor,
+  .card--karma,
+  .card--calculator {
+    margin-bottom: 2rem;
+  }
+}
