@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontendmentor]()
-- Live Site URL: [Github pages]()
+- Solution URL: [Frontendmentor](https://www.frontendmentor.io/solutions/four-card-feature-section-using-css-grid-and-flexbox-nuBzMeG5Hh)
+- Live Site URL: [Github pages](https://bennatbjoern.github.io/four-card-feature-section/)
 
 ## My process
 
